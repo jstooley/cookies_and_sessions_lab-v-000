@@ -7,10 +7,9 @@ class ProductsController < ActionController::Base
     @item = Item.find(params[:id])
 
 
-  cart = session[:cart] || []
-  cart << @item.id
+  
 
   
-  session[:cart] = cart
+  current_cart << @item.id
   end
 end
