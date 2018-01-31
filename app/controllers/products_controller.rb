@@ -4,7 +4,7 @@ class ProductsController < ActionController::Base
   end
 
   def add
-    current_cart << params[:product]
+    cart << params[:product]
     render :index
   end
 end
