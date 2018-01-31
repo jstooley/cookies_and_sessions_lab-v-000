@@ -7,6 +7,9 @@
 <% end %>
 
 
-<% cart.each do |product| %>
-<%= product %>
+<% if session[:cart] %>
+  <% session[:cart].each do |item|  %> 
+    <%= item %>
+  <% end %>
 <% end %>
+  
