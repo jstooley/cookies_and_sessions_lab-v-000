@@ -6,8 +6,8 @@
   <input type=submit value='add to cart'>
 <% end %>
 
-<% if session[:cart] %>
-  <% session[:cart].each do |item|  %>
+
+  <% cart.each do |item|  %>
     <%= item %>
   <% end %>
 <% end %>
