@@ -1,7 +1,6 @@
 class ProductsController < ActionController::Base
 
   def index
-    @items = Items.all
   end
 
   def add
