@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  root 'products#index'
   post '/' => 'products#add'
+  root 'products#index'
+  
 end
